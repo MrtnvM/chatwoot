@@ -7,9 +7,9 @@ services:
       - postgres
       - redis
     environment:
-      - SERVICE_FQDN_CHATWOOT_3000
+      - SERVICE_FQDN_CHATWOOT_3000=http://support.cl.mb-dev.ru
       - SECRET_KEY_BASE=$SERVICE_PASSWORD_CHATWOOT
-      - FRONTEND_URL=${SERVICE_FQDN_CHATWOOT_3000}
+      - FRONTEND_URL=https://support.cl.mb-dev.ru
       - DEFAULT_LOCALE=en
       - FORCE_SSL=false
       - ENABLE_ACCOUNT_SIGNUP=false
@@ -44,7 +44,7 @@ services:
       - redis
     environment:
       - SECRET_KEY_BASE=$SERVICE_PASSWORD_CHATWOOT
-      - FRONTEND_URL=${SERVICE_FQDN_CHATWOOT_3000}
+      - FRONTEND_URL=https://support.cl.mb-dev.ru
       - DEFAULT_LOCALE=en
       - FORCE_SSL=false
       - ENABLE_ACCOUNT_SIGNUP=false
